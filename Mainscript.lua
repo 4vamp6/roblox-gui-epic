@@ -1,21 +1,5 @@
 local Kavo = {}
 
-
-local Player = game:GetService("Players").LocalPlayer
-local Mouse = Player:GetMouse()
-local Kavo = Script.Parent.Kavo
-local keybind = "k"
-
-Mouse.KeyDown:Connect(function(key)
-		if key == keybind then
-			if Kavo.Visible == true then
-				Kavo.Visible = false
-			    elseif Kavo.Visible == false then
-				Kavo.visible = true
-			end
-		end
-	end
-
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
 local input = game:GetService("UserInputService")
